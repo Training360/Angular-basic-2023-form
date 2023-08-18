@@ -16,9 +16,7 @@ Template Driven Angular Forms
 - [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
 
 ## Lesson-04
-- Move the logic and the view from the AppComponent to the TicketsComponent.
-- [AppComponent](src/app/app.component.ts)
-- [TicketsComponent](src/app/page/tickets/tickets.component.ts)
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
 
 ## Lesson-05
 - Set the routerLinkActive and the routerLinkActiveOptions directives.
