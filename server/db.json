@@ -2,10 +2,10 @@
   "tickets": [
     {
       "id": 1,
-      "flightNumber": "wk0083",
-      "seat": "a0",
-      "service": "tourist",
-      "checked": false
+      "flightNumber": "WZ4359",
+      "seat": "G6",
+      "service": "economy",
+      "checked": true
     },
     {
       "id": 2,
