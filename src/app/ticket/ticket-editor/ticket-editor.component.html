@@ -8,6 +8,7 @@
           <label class="form-label">flightNumber</label>
           <input
             [(ngModel)]="ticket.flightNumber"
+            [ngModelOptions]="{updateOn: 'blur'}"
             type="text"
             class="form-control"
             name="flightNumber"

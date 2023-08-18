@@ -1,6 +1,4 @@
 import { Component, Input, OnInit, inject, numberAttribute } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { Ticket } from 'src/app/model/ticket';
 import { TicketService } from 'src/app/service/ticket.service';
 
 @Component({
