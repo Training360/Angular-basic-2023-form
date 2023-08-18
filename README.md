@@ -25,12 +25,11 @@ Template Driven Angular Forms
 - [TicketEditorComponent SCSS](src\app\ticket\ticket-editor\ticket-editor.component.scss)
 
 ## Lesson-07
-- `ng g c ticket/ticket-editor --module ticket.module`
-- [TicketRoutingModule](src/app/ticket/ticket-routing.module.ts)
-- [TicketsComponent](src/app/page/tickets/tickets.component.ts)
+- [ngModelOptions](https://angular.io/api/forms/NgModel#properties)
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
 
 ## Lesson-08
-- [AppRoutingModule](src/app/app-routing.module.ts)
-- `imports: [RouterModule.forRoot(routes, {bindToComponentInputs: true})],`
 - [TicketEditorComponent](src/app/ticket/ticket-editor/ticket-editor.component.ts)
-  
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
+
+## Lesson-09
