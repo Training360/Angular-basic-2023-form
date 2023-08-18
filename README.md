@@ -2,7 +2,8 @@
 Template Driven Angular Forms
 
 ## Lesson-01
-- [AppRoutingModule](src/app/app-routing.module.ts)
+- Explaining the course.
+- [TicketEditorComponent](src/app/ticket/ticket-editor/ticket-editor.component.ts)
 
 ## Lesson-02
 - [AppRoutingModule](src/app/app-routing.module.ts)
