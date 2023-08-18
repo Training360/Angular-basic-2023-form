@@ -11,8 +11,9 @@ Template Driven Angular Forms
 - [TicketEditorComponent SCSS](src/app/ticket/ticket-editor/ticket-editor.component.scss)
 
 ## Lesson-03
-- [ConfigService](src/app/service/config.service.ts)
-- [NavComponent](src/app/common/nav/nav.component.ts)
+- Import FormsModule:
+- [TicketModule](src/app/ticket/ticket.module.ts)
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
 
 ## Lesson-04
 - Move the logic and the view from the AppComponent to the TicketsComponent.

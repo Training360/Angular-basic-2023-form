@@ -1,27 +1,28 @@
 <div class="page d-flex justify-content-center p-2">
 
-  <div class="card form-card">
+  <div *ngIf="ticket$ | async as ticket" class="card form-card">
     <div class="card-body">
       <h5 class="card-title">Edit Ticket</h5>
       <form>
-        <!--
-          id?: number = 0;
-          flightNumber: string = '';
-          seat: string = '';
-          service: 'tourist' | 'business' | 'economy' = 'economy';
-          checked: boolean = false;
-         -->
         <div class="form-group">
           <label class="form-label">flightNumber</label>
-          <input type="text" class="form-control" name="flightNumber">
+          <input
+            [(ngModel)]="ticket.flightNumber"
+            type="text"
+            class="form-control"
+            name="flightNumber">
         </div>
         <div class="form-group">
           <label class="form-label">seat</label>
-          <input type="text" class="form-control" name="seat">
+          <input
+          [(ngModel)]="ticket.seat"
+            type="text" class="form-control" name="seat">
         </div>
         <div class="form-group">
           <label class="form-label">service</label>
-          <select class="form-select" name="service">
+          <select
+            [(ngModel)]="ticket.service"
+            class="form-select" name="service">
             <option value="">please select</option>
             <option value="tourist">tourist</option>
             <option value="business">business</option>
@@ -29,7 +30,10 @@
           </select>
         </div>
         <div class="form-check mt-3">
-          <input id="check" class="form-check-input" type="checkbox" checked>
+          <input
+            [(ngModel)]="ticket.checked"
+            name="checked"
+            id="check" class="form-check-input" type="checkbox">
           <label class="form-check-label" for="check">
             checked
           </label>
