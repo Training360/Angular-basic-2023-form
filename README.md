@@ -19,16 +19,10 @@ Template Driven Angular Forms
 - [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
 
 ## Lesson-05
-- Set the routerLinkActive and the routerLinkActiveOptions directives.
-- [NavComponent](src/app/common/nav/nav.component.ts)
-- [NavComponent SCSS](src/app/common/nav/nav.component.scss)
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
 
 ## Lesson-06
-- Generate a module: `ng generate module ticket --route ticket --module app.module`
-- Shared module: `ng generate module shared --flat`
-- Move the TicketsModule into the new ticket directory.
-- Move all common directives, pipes into the shared module.
-- Import shared module into the TicketModule.
+- [TicketEditorComponent SCSS](src\app\ticket\ticket-editor\ticket-editor.component.scss)
 
 ## Lesson-07
 - `ng g c ticket/ticket-editor --module ticket.module`
