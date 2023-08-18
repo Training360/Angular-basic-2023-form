@@ -3,7 +3,7 @@
   <div *ngIf="ticket$ | async as ticket" class="card form-card">
     <div class="card-body">
       <h5 class="card-title">Edit Ticket</h5>
-      <form>
+      <form #ticketForm="ngForm">
         <div class="form-group">
           <label class="form-label">flightNumber</label>
           <input
@@ -13,7 +13,10 @@
             name="flightNumber"
             pattern="^[A-Za-z]{2}[0-9]{4}$"
             required>
-        </div>
+          <div *ngIf="ticketForm.controls['flightNumber']?.invalid" class="error-message">
+            It must consist two letters and four numbers.
+          </div>
+          </div>
         <div class="form-group">
           <label class="form-label">seat</label>
           <input
@@ -21,7 +24,10 @@
             type="text" class="form-control" name="seat"
             pattern="^[A-Za-z][0-9]$"
             required>
-        </div>
+          <div *ngIf="ticketForm.controls['seat']?.invalid" class="error-message">
+            It must consist a letters and a numbers.
+          </div>
+          </div>
         <div class="form-group">
           <label class="form-label">service</label>
           <select
@@ -33,19 +39,25 @@
               <option value="business">business</option>
               <option value="economy">economy</option>
           </select>
+          <div *ngIf="ticketForm.controls['service']?.invalid" class="error-message">
+            Please select a valid option.
+          </div>
         </div>
         <div class="form-check mt-3">
           <input
             [(ngModel)]="ticket.checked"
             name="checked"
-            id="check" class="form-check-input" type="checkbox">
+            id="check"
+            class="form-check-input"
+            type="checkbox"
+            checked>
           <label class="form-check-label" for="check">
             checked
           </label>
         </div>
 
         <div class="d-grid mt-3">
-          <button class="btn btn-primary" type="submit">
+          <button [disabled]="ticketForm.invalid" class="btn btn-primary" type="submit">
             <i class="fa fa-save"></i>
             Save
           </button>
