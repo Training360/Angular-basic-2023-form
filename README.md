@@ -6,10 +6,9 @@ Template Driven Angular Forms
 - [TicketEditorComponent](src/app/ticket/ticket-editor/ticket-editor.component.ts)
 
 ## Lesson-02
-- [AppRoutingModule](src/app/app-routing.module.ts)
-- [HomeComponent](src/app/page/home/home.component.ts)
-- [TicketsComponent](src/app/page/tickets/tickets.component.ts)
-- [AboutComponent](src/app/page/about/about.component.ts)
+- [Bt5 Card](https://getbootstrap.com/docs/5.3/components/card/#titles-text-and-links)
+- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
+- [TicketEditorComponent SCSS](src/app/ticket/ticket-editor/ticket-editor.component.scss)
 
 ## Lesson-03
 - [ConfigService](src/app/service/config.service.ts)
@@ -41,5 +40,4 @@ Template Driven Angular Forms
 - [AppRoutingModule](src/app/app-routing.module.ts)
 - `imports: [RouterModule.forRoot(routes, {bindToComponentInputs: true})],`
 - [TicketEditorComponent](src/app/ticket/ticket-editor/ticket-editor.component.ts)
-- [TicketEditorComponent HTML](src/app/ticket/ticket-editor/ticket-editor.component.html)
   

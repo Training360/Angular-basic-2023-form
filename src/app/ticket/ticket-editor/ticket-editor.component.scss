@@ -1,0 +1,19 @@
+.card {
+  &.form-card {
+    max-width: 35rem;
+    min-width: 50vw;
+
+    .form-group, .form-check {
+      label {
+        text-transform: capitalize;
+      }
+    }
+
+    .form-check {
+      label {
+        user-select: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
